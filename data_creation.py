@@ -1,7 +1,7 @@
 import random
 import numpy as np
 import pandas as pd
-import sklearn
+import skikit-learn
 from sklearn.datasets import make_regression
 from sklearn.model_selection import train_test_split
 
