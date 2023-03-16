@@ -7,6 +7,13 @@ pipeline {
       }
     }
     
+    stage('install scikit-learn') {
+        steps {
+            sh 'python3 -m pip install scikit-learn'
+            echo 'Ok'
+        }
+    }
+    
     stage('data creation') {
       steps {
         sh 'python3 data_creation.py'
